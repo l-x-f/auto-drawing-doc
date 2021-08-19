@@ -2,7 +2,7 @@ module.exports = {
   base: '/auto-drawing-doc/',
   title: 'AutoDrawing',
   lang: 'zh',
-  description: '一个开箱即用的前端框架',
+  description: '基于zrender的自动json画图工具',
   head: [
     ['meta', { name: 'author', content: 'xiaofei' }],
     [
