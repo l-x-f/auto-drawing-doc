@@ -1,5 +1,5 @@
 module.exports = {
-  base: './',
+  base: '/auto-drawing-doc/',
   title: 'AutoDrawing',
   lang: 'zh',
   description: '一个开箱即用的前端框架',
