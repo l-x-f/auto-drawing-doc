@@ -16,7 +16,9 @@ npm install --save auto-drawing
 yarn add  auto-drawing
 ```
 
-## 使用 cdn （暴露全局变量 `AutoDrawing`）
+`cdn`
+
+暴露全局变量 `AutoDrawing`
 
 **使用最新版本**
 
@@ -28,7 +30,117 @@ yarn add  auto-drawing
 [https://cdn.jsdelivr.net/npm/auto-drawing@0.0.1-beta.4/dist/index.min.js](https://cdn.jsdelivr.net/npm/auto-drawing@0.0.1-beta.4/dist/index.min.js)
 :::
 
-## 浏览器使用
+## 使用
+
+### TypeScript
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
+```
+
+```ts
+import {
+  createCanvas,
+  createGroup,
+  ZRenderType,
+  ZRenderGroup,
+  ShapeCoreType
+} from 'auto-drawing'
+const app = doucument.getElementById('app')
+const zr: ZRenderType = createCanvas(app)
+const gp: ZRenderGroup = createGroup()
+
+const data: ShapeCoreType[] = [
+  {
+    type: 'rect',
+    zlevel: 0,
+    x: 135,
+    y: 76,
+    width: 40,
+    height: 50,
+    fill: '#00ff01',
+    stroke: '#00ff01'
+  },
+  {
+    type: 'line',
+    zlevel: 0,
+    x1: 96,
+    y1: 100,
+    x2: 104,
+    y2: 100,
+    stroke: '#f8f9b7'
+  },
+  {
+    type: 'line',
+    zlevel: 0,
+    x1: 100,
+    y1: 96,
+    x2: 100,
+    y2: 104,
+    stroke: '#f8f9b7'
+  },
+  {
+    type: 'sector',
+    cx: 150,
+    cy: 150,
+    r: 100,
+    r0: 0,
+    startAngle: 0,
+    endAngle: 90,
+    fill: 'yellow',
+    clockwise: true
+  },
+  {
+    type: 'arc',
+    cx: 300,
+    cy: 150,
+    r: 100,
+    startAngle: 0,
+    endAngle: 90,
+    fill: 'green',
+    clockwise: true
+  },
+  {
+    type: 'circle',
+    cx: 350,
+    cy: 350,
+    r: 50,
+    fill: 'green'
+  },
+  {
+    type: 'polygon',
+    points: [
+      [350, 0],
+      [500, 0],
+      [350, 100]
+    ],
+    fill: 'red',
+    stroke: 'none'
+  },
+  {
+    type: 'text',
+    x: 600,
+    y: 600,
+    text: '你好',
+    fontSize: 50,
+    fontWeight: 400
+  }
+]
+renderCanvas(zr, gp, data)
+```
+
+### JavaScript
 
 ```html
 <!DOCTYPE html>
@@ -185,195 +297,6 @@ yarn add  auto-drawing
 </html>
 ```
 
-## 支持 ES module
+## [JSON 画图](https://l-x-f.github.io/auto-drawing-doc/guide/json.html)
 
-```html
-<script type="module">
-  import { createCanvas, createGroup, renderCanvas } from 'auto-drawing'
-  const app = doucument.getElementById('app')
-  const zr = createCanvas(app)
-  const gp = createGroup()
-  const data = [
-    {
-      type: 'rect',
-      zlevel: 0,
-      x: 135,
-      y: 76,
-      width: 40,
-      height: 50,
-      fill: '#00ff01',
-      stroke: '#00ff01'
-    },
-    {
-      type: 'line',
-      zlevel: 0,
-      x1: 96,
-      y1: 100,
-      x2: 104,
-      y2: 100,
-      stroke: '#f8f9b7'
-    },
-    {
-      type: 'line',
-      zlevel: 0,
-      x1: 100,
-      y1: 96,
-      x2: 100,
-      y2: 104,
-      stroke: '#f8f9b7'
-    },
-    {
-      type: 'sector',
-      cx: 150,
-      cy: 150,
-      r: 100,
-      r0: 0,
-      startAngle: 0,
-      endAngle: 90,
-      fill: 'yellow',
-      clockwise: true
-    },
-    {
-      type: 'arc',
-      cx: 300,
-      cy: 150,
-      r: 100,
-      startAngle: 0,
-      endAngle: 90,
-      fill: 'green',
-      clockwise: true
-    },
-    {
-      type: 'circle',
-      cx: 350,
-      cy: 350,
-      r: 50,
-      fill: 'green'
-    },
-    {
-      type: 'polygon',
-      points: [
-        [350, 0],
-        [500, 0],
-        [350, 100]
-      ],
-      fill: 'red',
-      stroke: 'none'
-    },
-    {
-      type: 'text',
-      x: 600,
-      y: 600,
-      text: '你好',
-      fontSize: 50,
-      fontWeight: 400
-    }
-  ]
-  renderCanvas(zr, gp, data)
-</script>
-```
-
-## 支持 TypeScript
-
-```ts
-import {
-  createCanvas,
-  createGroup,
-  ZRenderType,
-  ZRenderGroup,
-  ShapeCoreType
-} from 'auto-drawing'
-const app = doucument.getElementById('app')
-const zr: ZRenderType = createCanvas(app)
-const gp: ZRenderGroup = createGroup()
-
-const data: ShapeCoreType[] = [
-  {
-    type: 'rect',
-    zlevel: 0,
-    x: 135,
-    y: 76,
-    width: 40,
-    height: 50,
-    fill: '#00ff01',
-    stroke: '#00ff01'
-  },
-  {
-    type: 'line',
-    zlevel: 0,
-    x1: 96,
-    y1: 100,
-    x2: 104,
-    y2: 100,
-    stroke: '#f8f9b7'
-  },
-  {
-    type: 'line',
-    zlevel: 0,
-    x1: 100,
-    y1: 96,
-    x2: 100,
-    y2: 104,
-    stroke: '#f8f9b7'
-  },
-  {
-    type: 'sector',
-    cx: 150,
-    cy: 150,
-    r: 100,
-    r0: 0,
-    startAngle: 0,
-    endAngle: 90,
-    fill: 'yellow',
-    clockwise: true
-  },
-  {
-    type: 'arc',
-    cx: 300,
-    cy: 150,
-    r: 100,
-    startAngle: 0,
-    endAngle: 90,
-    fill: 'green',
-    clockwise: true
-  },
-  {
-    type: 'circle',
-    cx: 350,
-    cy: 350,
-    r: 50,
-    fill: 'green'
-  },
-  {
-    type: 'polygon',
-    points: [
-      [350, 0],
-      [500, 0],
-      [350, 100]
-    ],
-    fill: 'red',
-    stroke: 'none'
-  },
-  {
-    type: 'text',
-    x: 600,
-    y: 600,
-    text: '你好',
-    fontSize: 50,
-    fontWeight: 400
-  }
-]
-renderCanvas(zr, gp, data)
-```
-
-## 文档
-
-[auto-drawing](https://github.com/l-x-f/auto-drawing)
-
-[json 画图](https://github.com/l-x-f/auto-drawing/blob/main/doc/index.md)
-
-[api](https://github.com/l-x-f/auto-drawing/blob/main/doc/api.md)
-
-## 友情链接
-
-[zrender](https://ecomfe.github.io/zrender-doc/public/)
+## [Api](https://l-x-f.github.io/auto-drawing-doc/guide/api.html)

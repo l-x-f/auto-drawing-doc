@@ -20,7 +20,8 @@ module.exports = {
           'width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
       }
     ],
-    ['meta', { name: 'keywords', content: 'auto-drawing docs' }]
+    ['meta', { name: 'keywords', content: 'auto-drawing docs' }],
+    ['link', { rel: 'icon', href: '/logo.png' }]
   ],
   themeConfig: {
     nav: [
@@ -37,8 +38,12 @@ module.exports = {
         link: '/guide/api'
       },
       {
-        text: 'Star',
+        text: 'star⭐',
         link: '/guide/star'
+      },
+      {
+        text: '友情链接ZRender',
+        link: 'https://ecomfe.github.io/zrender-doc/public/'
       },
       {
         text: 'github',

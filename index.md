@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /edit.png
+heroImage: /logo.png
 heroAlt: Logo image
 heroText: auto-drawing
 tagline: 基于zrender的自动json画图工具
@@ -8,7 +8,7 @@ actionText: 开始
 actionLink: /guide/
 
 altActionText: github
-altActionLink: https://vvbin.cn/next/
+altActionLink: https://github.com/l-x-f/auto-drawing
 
 features:
   - title: 💡 最新技术栈
