@@ -269,7 +269,7 @@ const data = {
   y2: 100
 }
 const shape = createLine(data)
-const app = createCanvas(app)
+const zr = createCanvas(app)
 app.add(line)
 ```
 
@@ -298,8 +298,8 @@ const data = {
   height: 100
 }
 const shape = createRect(data)
-const app = createCanvas(app)
-app.add(shape)
+const zr = createCanvas(app)
+zr.add(shape)
 ```
 
 ## createCircle 创建圆
@@ -326,8 +326,8 @@ const data = {
   r: 50
 }
 const shape = createCircle(data)
-const app = createCanvas(app)
-app.add(shape)
+const zr = createCanvas(app)
+zr.add(shape)
 ```
 
 ## createArc 创建圆弧
@@ -357,8 +357,8 @@ const data = {
   clockwise: true
 }
 const shape = createArc(data)
-const app = createCanvas(app)
-app.add(shape)
+const zr = createCanvas(app)
+zr.add(shape)
 ```
 
 ## createPolygon 创建闭合多边型
@@ -387,8 +387,8 @@ const data = {
   ]
 }
 const shape = createPolygon(data)
-const app = createCanvas(app)
-app.add(shape)
+const zr = createCanvas(app)
+zr.add(shape)
 ```
 
 ## createPolyline 创建不闭合多边型
@@ -417,8 +417,8 @@ const data = {
   ]
 }
 const shape = createPolyline(data)
-const app = createCanvas(app)
-app.add(shape)
+const zr = createCanvas(app)
+zr.add(shape)
 ```
 
 ## createText 创建文本
@@ -447,8 +447,8 @@ const data = {
   fontWeight: 400
 }
 const shape = createText(data)
-const app = createCanvas(app)
-app.add(shape)
+const zr = createCanvas(app)
+zr.add(shape)
 ```
 
 ## createBezierCurve 创建贝塞尔曲线
@@ -480,8 +480,8 @@ const data = {
   y2: 200
 }
 const shape = createBezierCurve(data)
-const app = createCanvas(app)
-app.add(shape)
+const zr = createCanvas(app)
+zr.add(shape)
 ```
 
 ## createImage 创建图片
@@ -510,6 +510,6 @@ const data = {
   image: './img.png'
 }
 const shape = createImage(data)
-const app = createCanvas(app)
-app.add(shape)
+const zr = createCanvas(app)
+zr.add(shape)
 ```
