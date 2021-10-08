@@ -1,4 +1,4 @@
-// <!-- l-x-f.github.io/auto-drawing-doc Baidu tongji analytics -->
+// <!-- l-x-f.github.io/auto-drawing-doc baingji analytics -->
 var _hmt = _hmt || []
 ;(function () {
   var hm = document.createElement('script')
