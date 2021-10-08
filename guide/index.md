@@ -20,14 +20,18 @@ yarn add  auto-drawing
 
 暴露全局变量 `AutoDrawing`
 
+```html
+<script src="https://cdn.jsdelivr.net/npm/auto-drawing@0.0.4/dist/auto-drawing.min.js"></script>
+```
+
 **使用最新版本**
 
-[https://cdn.jsdelivr.net/npm/auto-drawing/dist/index.min.js](https://cdn.jsdelivr.net/npm/auto-drawing/dist/index.min.js)
+[https://cdn.jsdelivr.net/npm/auto-drawing/dist/auto-drawing.min.js](https://cdn.jsdelivr.net/npm/auto-drawing/dist/auto-drawing.min.js)
 
 ::: warning 建议
-使用时建议加上版本号 如使用`0.0.3`版本
+使用时建议加上版本号 如使用`0.0.4`版本
 
-[https://cdn.jsdelivr.net/npm/auto-drawing@0.0.3/dist/index.min.js](https://cdn.jsdelivr.net/npm/auto-drawing@0.0.1-beta.4/dist/index.min.js)
+[https://cdn.jsdelivr.net/npm/auto-drawing@0.0.4/dist/auto-drawing.min.js](https://cdn.jsdelivr.net/npm/auto-drawing@0.0.4/dist/auto-drawing.min.js)
 :::
 
 ## 使用
@@ -71,7 +75,7 @@ renderCanvas(zr, gp, data, {
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/auto-drawing/dist/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/auto-drawing/dist/auto-drawing.min.js"></script>
   </head>
   <body>
     <div id="app"></div>
