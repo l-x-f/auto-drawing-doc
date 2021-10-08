@@ -21,7 +21,8 @@ module.exports = {
       }
     ],
     ['meta', { name: 'keywords', content: 'auto-drawing docs' }],
-    ['link', { rel: 'icon', href: '/auto-drawing-doc/logo.png' }]
+    ['link', { rel: 'icon', href: '/auto-drawing-doc/logo.png' }],
+    ['script', { src: '/auto-drawing-doc/hmt.js' }]
   ],
   themeConfig: {
     nav: [
