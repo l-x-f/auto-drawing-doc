@@ -152,8 +152,8 @@ onMounted(() => {
     },
     {
       type: 'image',
-      x: 100,
-      y: 400,
+      x: 450,
+      y: 100,
       width: 100,
       height: 100,
       image: img
