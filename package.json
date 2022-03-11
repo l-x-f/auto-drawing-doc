@@ -9,5 +9,8 @@
   "license": "MIT",
   "devDependencies": {
     "vitepress": "^0.16.1"
+  },
+  "dependencies": {
+    "auto-drawing": "^0.0.5"
   }
 }

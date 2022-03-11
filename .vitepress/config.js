@@ -35,6 +35,10 @@ module.exports = {
         link: '/guide/json'
       },
       {
+        text: '示例',
+        link: '/example/example'
+      },
+      {
         text: 'Api',
         link: '/guide/api'
       },
@@ -52,5 +56,8 @@ module.exports = {
       }
     ]
     // sidebar: createSidebar()
+  },
+  markdown: {
+    lineNumbers: true
   }
 }
