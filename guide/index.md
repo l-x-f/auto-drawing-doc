@@ -118,7 +118,7 @@ import {
   ZRenderGroup,
   ShapeCoreType
 } from 'auto-drawing'
-const app = doucument.getElementById('app') as HTMLElement
+const app = document.getElementById('app') as HTMLElement
 const zr: ZRenderType = createCanvas(app)
 const gp: ZRenderGroup = createGroup()
 const data: ShapeCoreType[] = [
