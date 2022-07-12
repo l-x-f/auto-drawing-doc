@@ -22,8 +22,7 @@ module.exports = {
     ],
     ['meta', { name: 'keywords', content: 'auto-drawing docs' }],
     ['link', { rel: 'icon', href: '/auto-drawing-doc/logo.png' }],
-    ['script', { src: '/auto-drawing-doc/hmt.js' }],
-    ['script', { src: 'https://xf-1252186245.cos.ap-chengdu.myqcloud.com/CAD/data.js' }]
+    ['script', { src: '/auto-drawing-doc/hmt.js' }]
   ],
   themeConfig: {
     nav: [
