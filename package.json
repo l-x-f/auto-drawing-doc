@@ -2,15 +2,24 @@
   "name": "auto-drawing-doc",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vitepress dev",
-    "build": "vitepress build",
-    "serve": "vitepress serve"
+    "dev": "yarn gFile &&  vitepress dev",
+    "build": "yarn gFile && vitepress build",
+    "serve": "yarn gFile && vitepress serve",
+    "gFile": "node ./gFile.js"
   },
   "license": "MIT",
   "devDependencies": {
     "vitepress": "^0.16.1"
   },
   "dependencies": {
-    "auto-drawing": "^0.0.5"
+    "@highlightjs/vue-plugin": "^2.1.0",
+    "@types/node": "^18.0.3",
+    "auto-drawing": "0.0.8",
+    "axios": "^0.27.2",
+    "element-plus": "^2.2.9",
+    "highlight.js": "^11.5.1",
+    "highlightjs": "^9.16.2",
+    "rimraf": "^3.0.2",
+    "sass": "^1.53.0"
   }
 }

@@ -22,7 +22,8 @@ module.exports = {
     ],
     ['meta', { name: 'keywords', content: 'auto-drawing docs' }],
     ['link', { rel: 'icon', href: '/auto-drawing-doc/logo.png' }],
-    ['script', { src: '/auto-drawing-doc/hmt.js' }]
+    ['script', { src: '/auto-drawing-doc/hmt.js' }],
+    ['script', { src: 'https://xf-1252186245.cos.ap-chengdu.myqcloud.com/CAD/data.js' }]
   ],
   themeConfig: {
     nav: [
@@ -43,19 +44,22 @@ module.exports = {
         link: '/guide/api'
       },
       {
-        text: 'star⭐',
-        link: '/guide/star'
-      },
-      {
         text: '友情链接ZRender',
         link: 'https://ecomfe.github.io/zrender-doc/public/'
+      },
+      {
+        text: '个人博客',
+        link: 'https://blog.csdn.net/qq_39953537'
+      },
+      {
+        text: '个人站点',
+        link: 'https://www.lixiaofei.site/'
       },
       {
         text: 'github',
         link: 'https://github.com/l-x-f/auto-drawing'
       }
     ]
-    // sidebar: createSidebar()
   },
   markdown: {
     lineNumbers: true

@@ -4,3 +4,13 @@
 .canvas-wrapper {
   margin: 1rem 0;
 }
+
+:root {
+  --el-color-primary: #1756f6 !important;
+}
+
+.el-card {
+  --el-card-padding: 12px !important;
+  
+}
+ 
