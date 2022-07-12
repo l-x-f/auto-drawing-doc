@@ -49,7 +49,7 @@ const style = reactive<{ height: number | string }>({
 
 const getFile = async () => {
   if (!props.fileName) return
-  const { data } = await axios.get(`/components/${props.fileName}.vue.txt`)
+  const { data } = await axios.get(`/auto-drawing-doc/components/${props.fileName}.vue.txt`)
   const tem = data.split('\n')
   html.value = data
   total.value = tem.length
