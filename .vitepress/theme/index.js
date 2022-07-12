@@ -5,7 +5,7 @@ import 'element-plus/dist/index.css'
 
 import 'highlight.js/styles/atom-one-dark.css'
 import 'highlight.js/lib/common'
-import hljsVuePlugin from '@highlightjs/vue-plugin'
+import hljsVuePlugin from './hljsVuePlugin'
 
 import CodeCard from './CodeCard.vue'
 import directive from './directive'

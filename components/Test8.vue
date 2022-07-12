@@ -1,9 +1,5 @@
 <template>
-  <div
-    class="container"
-    v-loading="state.loading"
-    element-loading-text="数据量非常大（百万级别），加载中，请耐心等待..."
-  >
+  <div class="container">
     <div ref="mainElementRef" class="main"></div>
   </div>
 </template>

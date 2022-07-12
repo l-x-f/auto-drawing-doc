@@ -6,7 +6,6 @@
 
 <script lang="ts" setup>
 // 鱼骨图
-import { ElMessage } from 'element-plus'
 import { onMounted, onBeforeUnmount, shallowReactive, ref, reactive } from 'vue'
 import type { ZRenderType, ZRenderGroup, ShapeCoreType } from 'auto-drawing'
 import { createCanvas, createGroup, renderCanvas } from 'auto-drawing'

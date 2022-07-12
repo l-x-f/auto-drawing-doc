@@ -44,8 +44,8 @@
 
 ## 示例 8
 
-<CodeCard fileName='Test8' title='电路板图（百万级别数据）' >
- <Test8 /> 
+<CodeCard fileName='Test8' title='电路板图（百万级别数据）,加载稍慢' >
+<Test8 /> 
 </CodeCard>
 
 <script setup>
