@@ -1,51 +1,63 @@
 # 示例
 
-## 示例 1
+## 电子与器件图
 
-<CodeCard fileName='Test1'  title='矩形图' >
+<CodeCard fileName='Test1'  title='电子与器件图' >
  <Test1 /> 
 </CodeCard>
 
-## 示例 2
+## 电子与器件图
 
-<CodeCard fileName='Test2' title='矩形图'>
+<CodeCard fileName='Test2' title='电子与器件图'>
  <Test2 /> 
 </CodeCard>
 
-## 示例 3
+## 电子与器件图
 
-<CodeCard fileName='Test3' title='矩形图'>
+<CodeCard fileName='Test3' title='电子与器件图'>
  <Test3 /> 
 </CodeCard>
 
-## 示例 4
+## 电子与器件图
 
-<CodeCard fileName='Test4' title='矩形图'>
+<CodeCard fileName='Test4' title='电子与器件图'>
  <Test4 /> 
 </CodeCard>
 
-## 示例 5
+## 电子与器件图
 
-<CodeCard fileName='Test5' title='矩形图'>
+<CodeCard fileName='Test5' title='电子与器件图'>
  <Test5 /> 
 </CodeCard>
 
-## 示例 6
+## 鱼骨图
 
 <CodeCard fileName='Test6'  title='鱼骨图'  >
  <Test6 /> 
 </CodeCard>
 
-## 示例 7
+## 圆点图
 
 <CodeCard fileName='Test7' title='圆点图'   >
  <Test7 /> 
 </CodeCard>
 
-## 示例 8
+## 电路板图
 
 <CodeCard fileName='Test8' title='电路板图（百万级别数据）,加载稍慢' >
 <Test8 /> 
+</CodeCard>
+
+## 户型图
+
+<CodeCard fileName='Test9' title='户型图' >
+<Test9 /> 
+</CodeCard>
+
+## 户型图
+
+<CodeCard fileName='Test10' title='户型图' >
+<Test10 /> 
 </CodeCard>
 
 <script setup>
@@ -57,4 +69,6 @@ import Test5 from '../components/Test5.vue'
 import Test6 from '../components/Test6.vue'
 import Test7 from '../components/Test7.vue'
 import Test8 from '../components/Test8.vue'
+import Test9 from '../components/Test9.vue'
+import Test10 from '../components/Test10.vue'
 </script>

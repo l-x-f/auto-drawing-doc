@@ -3,7 +3,6 @@ dist
 build
 static/
 assets
-public
+public/hmt.js
 coverage
 stats.html
- 
