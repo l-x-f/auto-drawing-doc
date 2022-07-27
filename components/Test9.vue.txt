@@ -77,11 +77,11 @@ const getText = (x: number, y: number, text: string) => ({
 const state = reactive<IState>({ zr: null, group: null, loading: true })
 const mainElementRef = ref<any>(null)
 
-const width = 944
+const width = 670
 const height = 400
 const rate = 50
 
-const baseOptions = { x: 200, y: height - 100 }
+const baseOptions = { x: 260, y: height - 100 }
 onMounted(() => {
   state.zr = createCanvas(mainElementRef.value, {
     width,
@@ -100,7 +100,7 @@ onMounted(() => {
         const color: Record<string, string> = {
           标注: 'red',
           '0': 'yellow',
-          墙线: 'blue',
+          墙线: '#fff',
           轴线: 'green',
           楼梯: '#ccc',
           门窗: '#eee'
