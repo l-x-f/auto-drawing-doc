@@ -1,6 +1,9 @@
 ---
 layout: home
 
+title: auto-drawing
+titleTemplate: 基于zrender的自动json画图工具
+
 hero:
   name: auto-drawing
   text: 基于zrender的自动json画图工具
@@ -27,8 +30,8 @@ features:
     details: 支持Vue、React、Angular等主流框架
 
   - icon: 🔩
-    title: 模块兼容性好
-    details: 支持cmd、amd、esm等
+    title: 图形特性
+    details: 内置支持图形缩放、平移。
 
   - icon: 🛠️
     title: 丰富的示例

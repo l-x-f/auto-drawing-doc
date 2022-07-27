@@ -1,7 +1,9 @@
-module.exports = {
+import { defineConfig } from 'vitepress'
+
+export default defineConfig({
   base: '/auto-drawing-doc/',
   title: 'AutoDrawing',
-  lang: 'zh',
+  lang: 'zh-CN',
   description: '基于zrender的自动json画图工具',
   head: [
     ['meta', { name: 'author', content: 'xiaofei' }],
@@ -25,6 +27,8 @@ module.exports = {
     ['script', { src: '/auto-drawing-doc/hmt.js' }]
   ],
   themeConfig: {
+    outlineTitle: '本页导航',
+    socialLinks: [{ icon: 'github', link: 'https://github.com/l-x-f/auto-drawing' }],
     nav: [
       {
         text: '指南',
@@ -43,24 +47,30 @@ module.exports = {
         link: '/guide/api'
       },
       {
-        text: '友情链接ZRender',
-        link: 'https://ecomfe.github.io/zrender-doc/public/'
-      },
-      {
-        text: '个人博客',
-        link: 'https://blog.csdn.net/qq_39953537'
-      },
-      {
-        text: '个人站点',
-        link: 'https://www.lixiaofei.site/'
-      },
-      {
-        text: 'github',
-        link: 'https://github.com/l-x-f/auto-drawing'
+        text: '友情链接',
+        items: [
+          {
+            text: 'ZRender',
+            link: 'https://ecomfe.github.io/zrender-doc/public/'
+          },
+          {
+            text: '个人博客',
+            link: 'https://blog.csdn.net/qq_39953537'
+          },
+          {
+            text: '个人站点',
+            link: 'https://www.lixiaofei.site/'
+          }
+        ]
       }
-    ]
+    ],
+    footer: {
+      message: 'MIT Licensed.',
+      copyright: 'Copyright © 2021-present xiaofei'
+    }
   },
+
   markdown: {
     lineNumbers: true
   }
-}
+})

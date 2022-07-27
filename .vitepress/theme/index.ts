@@ -5,11 +5,11 @@ import 'element-plus/dist/index.css'
 
 import 'highlight.js/styles/atom-one-dark.css'
 import 'highlight.js/lib/common'
-import hljsVuePlugin from './hljsVuePlugin'
+import hljsVuePlugin from './utils/hljsVuePlugin'
 
-import CodeCard from './CodeCard.vue'
-import directive from './directive'
-import './index.css'
+import CodeCard from './components/CodeCard.vue'
+import directive from './directives'
+import './styles/index.css'
 
 export default {
   ...DefaultTheme,

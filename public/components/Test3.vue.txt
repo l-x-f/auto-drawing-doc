@@ -6,7 +6,7 @@
 import { onMounted } from 'vue'
 import { createCanvas, createGroup, renderCanvas } from 'auto-drawing'
 onMounted(() => {
-  const width = 944
+  const width = 670
   const height = 300
   const zr = createCanvas('div3', {
     width,

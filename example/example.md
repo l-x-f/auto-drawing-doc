@@ -1,32 +1,38 @@
 # 示例
 
-## 电子与器件图
+## 线段矩形扇形
 
-<CodeCard fileName='Test1'  title='电子与器件图' >
+<CodeCard fileName='Tet0'  title='线段矩形扇形' >
+ <Tet0 /> 
+</CodeCard>
+
+## 电子元器件图-1
+
+<CodeCard fileName='Test1'  title='电子元器件图' >
  <Test1 /> 
 </CodeCard>
 
-## 电子与器件图
+## 电子元器件图-2
 
-<CodeCard fileName='Test2' title='电子与器件图'>
+<CodeCard fileName='Test2' title='电子元器件图'>
  <Test2 /> 
 </CodeCard>
 
-## 电子与器件图
+## 电子元器件图-3
 
-<CodeCard fileName='Test3' title='电子与器件图'>
+<CodeCard fileName='Test3' title='电子元器件图'>
  <Test3 /> 
 </CodeCard>
 
-## 电子与器件图
+## 电子元器件图-4
 
-<CodeCard fileName='Test4' title='电子与器件图'>
+<CodeCard fileName='Test4' title='电子元器件图'>
  <Test4 /> 
 </CodeCard>
 
-## 电子与器件图
+## 电子元器件图-5
 
-<CodeCard fileName='Test5' title='电子与器件图'>
+<CodeCard fileName='Test5' title='电子元器件图'>
  <Test5 /> 
 </CodeCard>
 
@@ -48,19 +54,20 @@
 <Test8 /> 
 </CodeCard>
 
-## 户型图
+## 户型图-1
 
 <CodeCard fileName='Test9' title='户型图' >
 <Test9 /> 
 </CodeCard>
 
-## 户型图
+## 户型图-2
 
 <CodeCard fileName='Test10' title='户型图' >
 <Test10 /> 
 </CodeCard>
 
 <script setup>
+import Tet0 from '../components/Tet0.vue'
 import Test1 from '../components/Test1.vue'
 import Test2 from '../components/Test2.vue'
 import Test3 from '../components/Test3.vue'

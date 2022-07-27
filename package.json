@@ -5,7 +5,7 @@
     "dev": "yarn gFile &&  vitepress dev",
     "build": "yarn gFile && vitepress build",
     "serve": "yarn gFile && vitepress serve",
-    "gFile": "node ./gFile.js"
+    "gFile": "node ./scripts/gFile.js"
   },
   "license": "MIT",
   "devDependencies": {

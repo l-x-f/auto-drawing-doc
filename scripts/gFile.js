@@ -3,14 +3,16 @@ const path = require('path')
 const fs = require('fs')
 const rimraf = require('rimraf')
 
-const pathResolve = p => path.join(__dirname, p)
+const pathResolve = p => path.join(__dirname, '../', p)
 
-rimraf(pathResolve('./public/components'), {}, () => {
-  if (!fs.existsSync(pathResolve('./public/components'))) {
-    fs.mkdirSync(pathResolve('./public/components'))
+const componentsDir = pathResolve('public/components')
+
+rimraf(componentsDir, {}, () => {
+  if (!fs.existsSync(componentsDir)) {
+    fs.mkdirSync(componentsDir)
   }
 
-  fg(['./components**/*.vue']).then(entries => {
+  fg(['components**/*.vue']).then(entries => {
     entries.forEach(item => {
       const data = fs.readFileSync(pathResolve(item), 'utf-8')
 

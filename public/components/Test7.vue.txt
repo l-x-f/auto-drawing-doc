@@ -5,7 +5,6 @@
 </template>
 
 <script lang="ts" setup>
-// 端子图
 import { onMounted, onBeforeUnmount, shallowReactive, ref, reactive } from 'vue'
 import type { ZRenderType, ZRenderGroup, ShapeCoreType } from 'auto-drawing'
 import { createCanvas, createGroup, renderCanvas } from 'auto-drawing'
@@ -49,7 +48,7 @@ const props = defineProps({
    */
   width: {
     type: Number,
-    default: 944
+    default: 670
   },
   /**
    * 画布高

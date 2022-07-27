@@ -20,16 +20,15 @@ interface IState {
 
 const state = reactive<IState>({ zr: null, group: null, loading: true })
 const mainElementRef = ref<any>(null)
-
-const width = 944
+const width = 670
 const height = 400
-
+const baseOptions = { x: 40, y: 0 }
 onMounted(() => {
   state.zr = createCanvas(mainElementRef.value, {
     width,
     height
   })
-  state.group = createGroup()
+  state.group = createGroup(baseOptions)
   axios.get('https://xf-1252186245.cos.ap-chengdu.myqcloud.com/CAD/data.json').then(res => {
     const data = res.data as ShapeCoreType[]
     renderCanvas(state.zr as ZRenderType, state.group as ZRenderGroup, data)
